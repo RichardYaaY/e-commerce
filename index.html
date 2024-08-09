@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-container">
+            <span class="cabecalho-menu-hamburguer"></span>
+            <img src="assets/Logo.svg" alt="Logo da Codebooks">
+        </div>
+        <div class="cabecalho-container">
+            <a href=""><img src="assets/coracao.svg" alt="Ícone itens favoritos"></a>
+            <a href=""><img src="assets/sacola.svg" alt="Ícone lista de desejos"></a>
+            <a href=""><img src="assets/profile.svg" alt="Ícone perfil"></a>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="banner">
+            <h2 class="principal-banner-titulo-h2">Já sabe por onde começar?</h2>
+            <p class="principal-banner-paragrafo">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input class="principal-banner-caixa-de-texto" type="search" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="principal-carrossel">
+            <h2 class="principal-carrossel-titulo">Novos lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/Gestão.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Gestão2.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/image 25.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/image 26.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/image 27.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Tuning.svg" alt=""></div>
+                ...
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween:10,
+            slidesPerView:1,
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type:'bullets',
+            },
+    });
+    </script>
+    <footer class="rodape">
+    </footer>
+</body>
+</html>
